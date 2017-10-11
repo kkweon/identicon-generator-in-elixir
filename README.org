@@ -1,0 +1,24 @@
+* Identicon
+
+Identicon generator example in Elixir
+
+- Identicon :: An Identicon is a visual representation of a hash value, usually of an IP address, that serves to identify a user of a computer system as a form of avatar while protecting the users' privacy. The original Identicon was a 9-block graphic, and the representation has been extended to other graphic forms by third parties.
+
+
+* How it works
+
+Let's say there is one string input such as username.
+
+
+#+BEGIN_SRC elixir
+  def main(input) do
+    input
+    |> hash_input
+    |> pick_color
+    |> build_grid
+    |> filter_odd_squares
+    |> build_pixel_map
+    |> draw_image
+    |> save_image(input)
+  end
+#+END_SRC
