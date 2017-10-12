@@ -4,6 +4,28 @@ Identicon generator example in Elixir
 
 - Identicon :: An Identicon is a visual representation of a hash value, usually of an IP address, that serves to identify a user of a computer system as a form of avatar while protecting the users' privacy. The original Identicon was a 9-block graphic, and the representation has been extended to other graphic forms by third parties.
 
+* Run
+
+- Install dependencies
+#+BEGIN_SRC bash
+mix deps.get
+#+END_SRC
+
+- Go to REPL
+#+BEGIN_SRC bash
+iex -S mix
+#+END_SRC
+
+- Run the command
+#+BEGIN_SRC bash
+iex> Identicon.main "Hello World"
+#+END_SRC
+
+
+The identicon of Hello World
+
+[[assets/Hello World.png]]
+
 
 * How it works
 
